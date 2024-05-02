@@ -1,0 +1,120 @@
+body {
+  width: 1400px;
+  background: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 930px;
+  height: 986px;
+  border-radius: 20px;
+  background: rgb(35, 35, 35);
+  height: 800px;
+  overflow-y: scroll;
+}
+.container__add-movies {
+  margin: 50px 40px 0px 40px;
+  padding-left: 30px;
+}
+.input-movie {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+}
+
+.add-new-movie-input-red {
+  border-bottom: 2px dashed red;
+}
+
+.btn-add-movie {
+  width: 62px;
+  height: 62px;
+  background: rgb(101, 50, 248);
+  border-radius: 50%;
+  border: none;
+}
+.btn-add-movie:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.listMovies {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.input-checkbox {
+  margin-left: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #f3f6f9;
+  opacity: 0.3;
+}
+
+.input-checkbox_checked {
+  background: #6532f8;
+}
+.input-checkbox:hover {
+  cursor: pointer;
+}
+
+.movie {
+  position: relative;
+  width: 790px;
+  height: 71px;
+  border-radius: 10px;
+  background: rgb(58, 57, 57);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.movie_hidden {
+  opacity: 0.2;
+}
+
+.lable {
+  color: white;
+  font-size: 23px;
+  margin-left: 20px;
+}
+
+.label_checked {
+  text-decoration: line-through;
+}
+
+.delete {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  transition: transform 0.3s ease;
+  fill: #f3f6f9;
+  opacity: 0.3;
+  width: 23px;
+  height: 23px;
+}
+
+.delete:hover {
+  cursor: pointer;
+  transform: translateY(-50%) scale(1.5);
+}

@@ -1,0 +1,1 @@
+export const MOVIES_FIREBASE_KEY = "movies";
